@@ -11,9 +11,11 @@
     "eslintconfig"
   ],
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0"
   },
   "peerDependencies": {
+    "babel-eslint": ">=10.1.0",
     "eslint": ">=6.8.0"
   }
 }
