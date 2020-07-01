@@ -1,0 +1,35 @@
+{
+  "name": "@shirohana/eslint-config",
+  "description": "Hana's personal sharable eslint config",
+  "version": "0.0.1",
+  "author": "Hana Shiro <shirohana0608@gmail.com>",
+  "repository": "https://github.com/shirohana/eslint-config",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.17.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "eslint-plugin-react-pug": "^0.8.4"
+  },
+  "peerDependencies": {
+    "babel-eslint": ">=10.1.0",
+    "eslint": ">=6.8.0",
+    "eslint-plugin-flowtype": ">=4.7.0",
+    "eslint-plugin-import": ">=2.20.2",
+    "eslint-plugin-jest": ">=23.17.1",
+    "eslint-plugin-node": ">=11.1.0",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-react-hooks": ">=4.0.4",
+    "eslint-plugin-react-pug": ">=0.8.4"
+  }
+}
