@@ -104,7 +104,7 @@ module.exports = {
     'flowtype/sort-keys': 0,
 
     // Enforces consistent spacing after the type annotation colon
-    'flowtype/space-after-type-colon': 2,
+    'flowtype/space-after-type-colon': [2, 'always', { allowLineBreak: true }],
 
     // Enforces consistent spacing before the opening `<` of generic type annotation parameters
     'flowtype/space-before-generic-bracket': 2,
