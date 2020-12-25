@@ -4,6 +4,9 @@ Changelog
 Unreleased
 ----------
 
+[0.0.3] - 2020-12-25
+--------------------
+
 ### Added
 - Create 1 new preset:
     - `@shirohana/eslint-config/jest`
@@ -34,5 +37,6 @@ Unreleased
     - `@shirohana/eslint-config/plugin-ava`
     - `@shirohana/eslint-config/plugin-jest`
 
+[0.0.3]: https://github.com/shirohana/eslint-config/releases/tag/v0.0.3
 [0.0.2]: https://github.com/shirohana/eslint-config/releases/tag/v0.0.2
 [0.0.1]: https://github.com/shirohana/eslint-config/releases/tag/v0.0.1
