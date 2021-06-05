@@ -4,6 +4,17 @@ Changelog
 Unreleased
 ----------
 
+[0.0.4] - 2021-06-05
+--------------------
+
+### Added
+- Enable JSX related rules in:
+    - `@shirohana/eslint-config/react`
+
+### Changed
+- Ignore `camelcase` when match `/^_/`.
+
+
 [0.0.3] - 2020-12-25
 --------------------
 

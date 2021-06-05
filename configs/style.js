@@ -16,7 +16,7 @@ module.exports = {
     'brace-style': [2, '1tbs'],
 
     // Require camelcase
-    'camelcase': [2, { properties: 'never', ignoreDestructuring: true }],
+    'camelcase': [2, { properties: 'never', ignoreDestructuring: true, allow: ['\\$_'] }],
 
     // Enforce or Disallow capitalization of the first letter of a comment
     'capitalized-comments': 0,
