@@ -200,8 +200,142 @@ module.exports = {
     'react/style-prop-object': 2,
 
     // Prevent passing of children to void DOM elements (e.g. <br />)
-    'react/void-dom-elements-no-children': 2
+    'react/void-dom-elements-no-children': 2,
 
-    // No JSX, we use Pug
+    // Enforce boolean attributes notation in JSX
+    'react/jsx-boolean-value': [2, 'never', { always: [] }],
+
+    // Ensures inline tags are not rendered without spaces between them
+    'react/jsx-child-element-spacing': 0,
+
+    // Validate closing bracket location in JSX
+    'react/jsx-closing-bracket-location': [2, 'line-aligned'],
+
+    // Validate closing tag location for multiline JSX
+    'react/jsx-closing-tag-location': 2,
+
+    // Disallow unnecessary JSX expressions when literals alone are sufficient or enfore JSX expressions on literals in JSX children or attributes
+    'react/jsx-curly-brace-presence': [2, { props: 'never', children: 'never' }],
+
+    // Enforce consistent line breaks inside jsx curly
+    'react/jsx-curly-newline': [2, {
+      multiline: 'consistent',
+      singleline: 'consistent',
+    }],
+
+    // Enforce or disallow spaces inside of curly braces in JSX attributes
+    'react/jsx-curly-spacing': [2, 'never', { allowMultiline: true }],
+
+    // Disallow or enforce spaces around equal signs in JSX attributes
+    'react/jsx-equals-spacing': [2, 'never'],
+
+    // Restrict file extensions that may contain JSX
+    'react/jsx-filename-extension': [2, { extensions: ['.jsx'] }],
+
+    // Ensure proper position of the first property in JSX
+    'react/jsx-first-prop-new-line': [0, 'multiline-multiprop'],
+
+    // Enforce shorthand or standard form for React fragments
+    'react/jsx-fragments': [2, 'syntax'],
+
+    // Enforce event handler naming conventions in JSX
+    'react/jsx-handler-names': 0,
+
+    // Validate JSX indentation
+    'react/jsx-indent': [2, 2],
+
+    // Validate props indentation in JSX
+    'react/jsx-indent-props': [2, 2],
+
+    // Report missing key props in iterators/collection literals
+    'react/jsx-key': 0,
+
+    // Validate JSX maximum depth
+    'react/jsx-max-depth': 0,
+
+    // Limit maximum of props on a single line in JSX
+    'react/jsx-max-props-per-line': [2, { maximum: 1, when: 'multiline' }],
+
+    // Require or prevent a new line after jsx elements and expressions.
+    'react/jsx-newline': 0,
+
+    // Prevents usage of Function.prototype.bind and arrow functions in React component props
+    'react/jsx-no-bind': [2, {
+      ignoreDOMComponents: true,
+      ignoreRefs: true,
+      allowArrowFunctions: true,
+      allowFunctions: false,
+      allowBind: false,
+    }],
+
+    // Comments inside children section of tag should be placed inside braces
+    'react/jsx-no-comment-textnodes': 2,
+
+    // Prevents JSX context provider values from taking values that will cause needless rerenders.
+    'react/jsx-no-constructed-context-values': 2,
+
+    // Enforce no duplicate props
+    'react/jsx-no-duplicate-props': [2, { ignoreCase: true }],
+
+    // Prevent using string literals in React component definition 'react/jsx-no-literals': 0,
+
+    // Forbid javascript: URLs
+    'react/jsx-no-script-url': 0,
+
+    // Forbid target="_blank" attribute without rel="noreferrer"
+    'react/jsx-no-target-blank': [2, { enforceDynamicLinks: 'always' }],
+
+    // Disallow undeclared variables in JSX
+    'react/jsx-no-undef': 2,
+
+    // Disallow unnecessary fragments
+    'react/jsx-no-useless-fragment': 2,
+
+    // Limit to one expression per line in JSX
+    'react/jsx-one-expression-per-line': [2, { allow: 'single-child' }],
+
+    // Enforce PascalCase for user-defined JSX components
+    'react/jsx-pascal-case': [2, {
+      allowAllCaps: true,
+      ignore: [],
+    }],
+
+    // Disallow multiple spaces between inline JSX props
+    'react/jsx-props-no-multi-spaces': 2,
+
+    // Prevent JSX prop spreading
+    // We can disable it safely, FlowType do the check
+    'react/jsx-props-no-spreading': 0,
+
+    // Enforce default props alphabetical sorting
+    'react/jsx-sort-default-props': 0,
+
+    // Enforce props alphabetical sorting
+    'react/jsx-sort-props': 0,
+
+    // Validate whitespace in and around the JSX opening and closing brackets
+    'react/jsx-tag-spacing': [2, {
+      closingSlash: 'never',
+      beforeSelfClosing: 'always',
+      afterOpening: 'never',
+      beforeClosing: 'never',
+    }],
+
+    // Prevent React to be marked as unused
+    'react/jsx-uses-react': 2,
+
+    // Prevent variables used in JSX to be marked as unused
+    'react/jsx-uses-vars': 2,
+
+    // Prevent missing parentheses around multilines JSX
+    'react/jsx-wrap-multilines': [2, {
+      declaration: 'parens-new-line',
+      assignment: 'parens-new-line',
+      return: 'parens-new-line',
+      arrow: 'parens-new-line',
+      condition: 'parens-new-line',
+      logical: 'parens-new-line',
+      prop: 'parens-new-line',
+    }]
   }
 }
