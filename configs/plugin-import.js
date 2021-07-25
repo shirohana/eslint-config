@@ -49,7 +49,7 @@ module.exports = {
       'import/no-relative-parent-imports': 0,
 
       // Forbid modules without any export, and exports not imported by any modules
-      'import/no-unused-modules': 1
+      'import/no-relative-packages': 0,
     },
 
     // Helpful warnings
@@ -73,7 +73,7 @@ module.exports = {
       'import/no-mutable-exports': 2,
 
       // Report modules without exports, or exports without matching import in another module
-      'import/no-unused-modules': 0
+      'import/no-unused-modules': 0,
     },
 
     // Module systems
@@ -88,7 +88,10 @@ module.exports = {
       'import/no-amd': 0,
 
       // No Node.js builtin modules
-      'import/no-nodejs-modules': 0
+      'import/no-nodejs-modules': 0,
+
+      // Forbid imports with CommonJS exports
+      'import/no-import-module-exports': 0,
     },
 
     // Style guide
@@ -114,9 +117,10 @@ module.exports = {
           'builtin',
           'external',
           'internal',
-          'unknown',
           'parent',
+          'index',
           'sibling',
+          'type',
         ]
       }],
 
@@ -148,7 +152,7 @@ module.exports = {
       'import/group-exports': 0,
 
       // Enforce a leading comment with the webpackChunkName for dynamic imports
-      'import/dynamic-import-chunkname': 0
+      'import/dynamic-import-chunkname': 0,
     }
   }
 }
