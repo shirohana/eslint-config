@@ -190,7 +190,7 @@ module.exports = {
     'no-multi-assign': 2,
 
     // Disallow multiple empty lines
-    'no-multiple-empty-lines': 2,
+    'no-multiple-empty-lines': [2, { max: 1 }],
 
     // Disallow negated conditions
     'no-negated-condition': 0,
