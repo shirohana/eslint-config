@@ -4,6 +4,9 @@ Changelog
 Unreleased
 ----------
 
+[0.0.5] - 2021-07-25
+--------------------
+
 ### Changed
 - Modify 1 rule
       ##### ./configs/style.js
