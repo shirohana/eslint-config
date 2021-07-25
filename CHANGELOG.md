@@ -4,6 +4,18 @@ Changelog
 Unreleased
 ----------
 
+[0.0.5] - 2021-07-25
+--------------------
+
+### Changed
+- Modify 1 rule
+      ##### ./configs/style.js
+      ```diff
+      - 'no-multiple-empty-lines': 2,
+      + 'no-multiple-empty-lines': [2, { max: 1 }],
+      ```
+- Migrate new rules of `eslint-plugin-import` and `eslint-plugin-jest`
+
 [0.0.4] - 2021-06-05
 --------------------
 

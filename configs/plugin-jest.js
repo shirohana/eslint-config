@@ -20,6 +20,9 @@ module.exports = {
     // Enforce lowercase test names
     'jest/lowercase-name': 0,
 
+    // Enforces a maximum depth to nested describe calls
+    'jest/max-nested-describe': 1,
+
     // Disallow alias methods
     'jest/no-alias-methods': 2,
 
