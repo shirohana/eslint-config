@@ -4,6 +4,26 @@ Changelog
 Unreleased
 ----------
 
+[0.0.6] - 2021-08-11
+--------------------
+
+### Changed
+- Modify 4 rules
+      ##### ./configs/plugin-react.js
+      ```diff
+      - 'react/prefer-read-only-props': 1,
+      + 'react/prefer-read-only-props': 2,
+
+      - 'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
+      + 'react/prefer-stateless-function': 2,
+
+      - 'react/self-closing-comp': 1,
+      + 'react/self-closing-comp': 2,
+
+      - 'react/jsx-curly-spacing': [2, 'never', { allowMultiline: true }],
+      + 'react/jsx-curly-spacing': [2, { when: 'never', children: true }, { allowMultiline: true }],
+      ```
+
 [0.0.5] - 2021-07-25
 --------------------
 
