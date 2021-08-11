@@ -126,10 +126,10 @@ module.exports = {
     'react/prefer-es6-class': 2,
 
     // Require read-only props. (fixable)
-    'react/prefer-read-only-props': 1,
+    'react/prefer-read-only-props': 2,
 
     // Enforce stateless components to be written as a pure function
-    'react/prefer-stateless-function': [1, { ignorePureComponents: true }],
+    'react/prefer-stateless-function': 2,
 
     // Prevent missing props validation in a React component definition
     'react/prop-types': 0,
@@ -147,7 +147,7 @@ module.exports = {
     'react/require-render-return': 2,
 
     // Prevent extra closing tags for components without children (fixable)
-    'react/self-closing-comp': 1,
+    'react/self-closing-comp': 2,
 
     // Enforce component methods order
     'react/sort-comp': [2, {
@@ -224,7 +224,7 @@ module.exports = {
     }],
 
     // Enforce or disallow spaces inside of curly braces in JSX attributes
-    'react/jsx-curly-spacing': [2, 'never', { allowMultiline: true }],
+    'react/jsx-curly-spacing': [2, { when: 'never', children: true }, { allowMultiline: true }],
 
     // Disallow or enforce spaces around equal signs in JSX attributes
     'react/jsx-equals-spacing': [2, 'never'],
